@@ -69,7 +69,7 @@ function Ticket() {
     closeModal();
   };
 
-  // Open and close modal
+  // Open/close modal
   const openModal = () => setModalIsOpen(true);
   const closeModal = () => setModalIsOpen(false);
 
