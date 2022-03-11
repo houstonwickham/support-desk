@@ -418,3 +418,15 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 470px) {
+  .tickets .product-row {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .header .logo a svg {
+    font-size: 3.2rem;
+  }
+}

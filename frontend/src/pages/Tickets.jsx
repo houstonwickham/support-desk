@@ -6,7 +6,9 @@ import BackButton from '../components/BackButton';
 import TicketItem from '../components/TicketItem';
 
 function Tickets() {
-  const { tickets, isLoading, isSuccess } = useSelector((state) => state.tickets);
+  const { tickets, isLoading, isSuccess } = useSelector(
+    (state) => state.tickets
+  );
 
   const dispatch = useDispatch();
 
@@ -33,7 +35,7 @@ function Tickets() {
       <div className='tickets'>
         <div className='ticket-headings'>
           <div>Date</div>
-          <div>Product</div>
+          <div className='product-row'>Product</div>
           <div>Status</div>
           <div></div>
         </div>
