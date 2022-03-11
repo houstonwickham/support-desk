@@ -85,12 +85,13 @@ function Ticket() {
     <div className='ticket-page'>
       <header className='ticket-header'>
         <BackButton url='/tickets' />
-        <h2>
-          Ticket ID: {ticket._id}
+        <div className='ticket-id-container'>
+          <h2>Ticket ID: {ticket._id}</h2>
           <span className={`status status-${ticket.status}`}>
             {ticket.status}
           </span>
-        </h2>
+        </div>
+
         <h3>
           Date Submitted: {new Date(ticket.createdAt).toLocaleString('en-us')}
         </h3>
