@@ -205,6 +205,15 @@ h3 {
   padding: 50px;
 }
 
+.ticket-header .ticket-id-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-header .ticket-id-container span {
+  height: 24px;
+}
+
 .ticket-number {
   margin-bottom: 30px;
 }
@@ -422,6 +431,10 @@ footer {
 @media (max-width: 470px) {
   .tickets .product-row {
     display: none;
+  }
+  .ticket-header .ticket-id-container {
+    flex-direction: column;
+    margin-bottom: 10px;
   }
 }
 
